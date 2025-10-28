@@ -1,0 +1,180 @@
+{
+  "categories": [
+    {
+      "id": "c1",
+      "name": "Men's Items",
+      "subcategories": [
+        {
+          "id": "s1",
+          "name": "shirts"
+        },
+        {
+          "id": "s2",
+          "name": "Pants"
+        },
+        {
+          "id": "s3",
+          "name": "Watches"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "name": "Women's Items",
+      "subcategories": [
+        {
+          "id": "s4",
+          "name": "Dresses"
+        },
+        {
+          "id": "s5",
+          "name": "Handbags"
+        },
+        {
+          "id": "s6",
+          "name": "Jewelry"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "name": "Kid's Items",
+      "subcategories": [
+        {
+          "id": "s7",
+          "name": "Toys"
+        },
+        {
+          "id": "s8",
+          "name": "Clothes"
+        },
+        {
+          "id": "s9",
+          "name": "Shoes"
+        }
+      ]
+    }
+  ],
+  "Products": [
+    {
+      "id": "4130",
+      "category": "Men's Items",
+      "subcategory": "shirts",
+      "productName": "Men's casual shirts",
+      "oldPrice": "300",
+      "offerPrice": "200",
+      "productImage": "https://m.media-amazon.com/images/I/61ltD0gc9yL._UY1100_.jpg",
+      "productQty": "1",
+      "productDescription": "Very Good",
+      "addedDate": "2025-09-19"
+    },
+    {
+      "id": "0a48",
+      "category": "Women's Items",
+      "subcategory": "Handbags",
+      "productName": "Women's Handbags",
+      "oldPrice": "199",
+      "offerPrice": "147",
+      "productImage": "https://media.istockphoto.com/id/1365118618/photo/blue-fashion-purse-handbag-on-white-background-isolated.jpg?s=612x612&w=0&k=20&c=VNszfC0cxenqZGhjlr3gqqvzHWREuhdY_H3CKF1B38g=",
+      "productQty": "4",
+      "productDescription": "Excellent",
+      "addedDate": "2025-09-16"
+    },
+    {
+      "id": "f1ff",
+      "category": "Kid's Items",
+      "subcategory": "Shoes",
+      "productName": "Kid's shoes",
+      "oldPrice": "145",
+      "offerPrice": "100",
+      "productImage": "https://paragonfootwear.com/cdn/shop/files/MK8009K-NYB_LS.jpg?v=1756713150",
+      "productQty": "2",
+      "productDescription": "Good Shoes",
+      "addedDate": "2025-09-25"
+    },
+    {
+      "id": "5059",
+      "category": "Kid's Items",
+      "subcategory": "Clothes",
+      "productName": "Kid's clothes",
+      "oldPrice": "1000",
+      "offerPrice": "850",
+      "productImage": "https://images.pexels.com/photos/1620760/pexels-photo-1620760.jpeg",
+      "productQty": "2",
+      "productDescription": "Very Good Product with details",
+      "addedDate": "2025-09-17"
+    },
+    {
+      "id": "m101",
+      "category": "Men's Items",
+      "subcategory": "Pants",
+      "productName": "Men's Slim Fit Pants",
+      "oldPrice": "899",
+      "offerPrice": "699",
+      "productImage": "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg",
+      "productQty": "3",
+      "productDescription": "Comfortable slim fit pants for daily wear",
+      "addedDate": "2025-09-20"
+    },
+    {
+      "id": "m102",
+      "category": "Men's Items",
+      "subcategory": "Watches",
+      "productName": "Classic Analog Watch",
+      "oldPrice": "1500",
+      "offerPrice": "1100",
+      "productImage": "https://images.pexels.com/photos/277319/pexels-photo-277319.jpeg",
+      "productQty": "5",
+      "productDescription": "Stylish analog watch with leather strap",
+      "addedDate": "2025-09-22"
+    },
+    {
+      "id": "w201",
+      "category": "Women's Items",
+      "subcategory": "Dresses",
+      "productName": "Floral Summer Dress",
+      "oldPrice": "1800",
+      "offerPrice": "1450",
+      "productImage": "https://images.pexels.com/photos/1544729/pexels-photo-1544729.jpeg",
+      "productQty": "3",
+      "productDescription": "Lightweight dress, ideal for summer outings",
+      "addedDate": "2025-09-18"
+    },
+    {
+      "id": "w202",
+      "category": "Women's Items",
+      "subcategory": "Jewelry",
+      "productName": "Elegant Gold Necklace",
+      "oldPrice": "5000",
+      "offerPrice": "4200",
+      "productImage": "https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg",
+      "productQty": "1",
+      "productDescription": "Beautiful gold plated necklace for special occasions",
+      "addedDate": "2025-09-20"
+    },
+    {
+      "id": "w204",
+      "category": "Women's Items",
+      "subcategory": "Dresses",
+      "productName": "Evening Party Gown",
+      "oldPrice": "4500",
+      "offerPrice": "3800",
+      "productImage": "https://images.pexels.com/photos/2889498/pexels-photo-2889498.jpeg",
+      "productQty": "2",
+      "productDescription": "Elegant gown suitable for evening parties",
+      "addedDate": "2025-09-24"
+    },
+    {
+      "id": "m104",
+      "category": "Men's Items",
+      "subcategory": "Watches",
+      "productName": "Digital Sports Watch",
+      "oldPrice": "2200",
+      "offerPrice": "1700",
+      "productImage": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+      "productQty": "4",
+      "productDescription": "Durable digital watch with sports features",
+      "addedDate": "2025-09-25"
+    }
+  ]
+}
