@@ -19,8 +19,10 @@ export default function Checkout({ cart, setCart }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`✅ Order placed successfully! Total paid ${totalPrice} rupees`);
-    navigate("/"); // redirect to home after checkout
+    navigate("/payment-success", {
+      state: { cart, totalPrice },
+    });
+
     setCart([]);
   };
 

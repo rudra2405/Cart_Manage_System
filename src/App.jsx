@@ -17,6 +17,7 @@ import Content from "./Components/Users/Content";
 import ProductDetails from "./Components/Users/Pages/ProductDetails.jsx";
 import Cart from "./Components/Users/Pages/Cart.jsx";
 import Checkout from "./Components/Users/Pages/Checkout.jsx";
+import PaymentSuccess from "./Components/Users/Pages/PaymentSucessfull.jsx";
 
 export default function App() {
   return (
@@ -96,6 +97,10 @@ export default function App() {
                 <Checkout></Checkout>
               </Layout>
             }
+          />
+          <Route
+            path="/payment-success"
+            element={<PaymentSuccess></PaymentSuccess>}
           />
 
           {/* <Route index element={<Content />} />
