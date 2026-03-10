@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaTrash } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 export default function Cart({ cart, setCart, removeCart }) {
   // const { cart, setCart, removeCart } = useOutletContext();
 
   const totalPrice = cart.reduce(
     (sum, item) => sum + item.offerPrice * item.qty,
-    0
+    0,
   );
 
   if (cart.length === 0)
@@ -48,8 +49,8 @@ export default function Cart({ cart, setCart, removeCart }) {
                         cart.map((i) =>
                           i.id === item.id
                             ? { ...i, qty: Math.max(1, i.qty - 1) }
-                            : i
-                        )
+                            : i,
+                        ),
                       )
                     }
                     className="px-2 bg-gray-200 rounded"
@@ -61,8 +62,8 @@ export default function Cart({ cart, setCart, removeCart }) {
                     onClick={() =>
                       setCart(
                         cart.map((i) =>
-                          i.id === item.id ? { ...i, qty: i.qty + 1 } : i
-                        )
+                          i.id === item.id ? { ...i, qty: i.qty + 1 } : i,
+                        ),
                       )
                     }
                     className="px-2 bg-gray-200 rounded"
@@ -75,13 +76,29 @@ export default function Cart({ cart, setCart, removeCart }) {
               <td className="border p-2">
                 <button
                   onClick={() => {
-                    if (
-                      window.confirm(
-                        "Are you sure you want to remove this item from cart?"
-                      )
-                    ) {
-                      removeCart(item.id);
-                    }
+                    Swal.fire({
+                      title: "Remove item?",
+                      text: "This item will be removed from your cart.",
+                      icon: "warning",
+                      showCancelButton: true,
+                      confirmButtonColor: "#ef4444",
+                      cancelButtonColor: "#6b7280",
+                      confirmButtonText: "Remove",
+                      cancelButtonText: "Cancel",
+                    }).then((result) => {
+                      if (result.isConfirmed) {
+                        removeCart(item.id);
+
+                        Swal.fire({
+                          toast: true,
+                          position: "top-end",
+                          icon: "success",
+                          title: "Item removed from cart",
+                          timer: 1000,
+                          showConfirmButton: false,
+                        });
+                      }
+                    });
                   }}
                   className="text-red-500 px-2"
                 >
@@ -103,9 +120,11 @@ export default function Cart({ cart, setCart, removeCart }) {
         >
           Proceed to Checkout
         </Link>
+      </div>
+      <div className="text-right mt-6">
         <Link
           to="/"
-          className="bg-yellow-500 text-white px-4 py-2 ms-3 rounded hover:bg-yellow-600 transition"
+          className="bg-yellow-500 text-white text-right px-4 py-2 ms-3 rounded hover:bg-yellow-600 transition"
         >
           Continue Shopping
         </Link>

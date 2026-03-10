@@ -10,6 +10,8 @@ import UpdateProduct from "./Components/Admin/Pages/UpdateProduct.jsx";
 
 // {User imports}
 import Layout from "./Layout.jsx";
+import Login from "./Components/Users/Login.jsx";
+import Register from "./Components/Users/Register.jsx";
 import MenProducts from "./Components/Users/Pages/MenProducts.jsx";
 import WomenProducts from "./Components/Users/Pages/WomenProducts.jsx";
 import KidsProducts from "./Components/Users/Pages/KidsProducts.jsx";
@@ -102,7 +104,8 @@ export default function App() {
             path="/payment-success"
             element={<PaymentSuccess></PaymentSuccess>}
           />
-
+          <Route path="/login" element={<Login></Login>} />
+          <Route path="/register" element={<Register></Register>} />
           {/* <Route index element={<Content />} />
             <Route
               path="/mens-products"
